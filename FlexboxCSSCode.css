@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: cornflowerblue;
+  background-color: black;
   color: white;
   gap: 20px;
 }
