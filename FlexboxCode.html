@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="FlexboxCSSCode.css">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body> 
+
+  <div class="wrapper">
+    <h1>Flexbox Project</h1>
+
+   
+    <div class="column-section">
+      <div class="box">The Boy</div>
+      <div class="box">Who</div>
+      <div class="box">Lives</div>
+    </div>
+
+   
+    <div class="row-section">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+
+    
+    <button>Click to Toggle Boxes</button>
+
+    <div id="div1" class="fade-box">Fading</div>
+    <div id="div2" class="fade-box">Fading...</div>
+    <div id="div3" class="fade-box">annddd gone</div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
